@@ -5,16 +5,17 @@
 h1,
 h2,
 h3,
-btn,
+.btn,
 p,
-menu {
+.menu,
+.footer_txt {
     font-family: var(--font-secondary);
     line-height: 1.1;
-    font-weight: bold;
     margin: 0;
 }
 
 h1 {
+    font-family: var(--font-primary);
     font-size: var(--font-size-h1);
     line-height: 1;
 }
@@ -27,7 +28,7 @@ h3 {
     font-size: var(--font-size-h3);
 }
 
-btn {
+.btn {
     font-size: var(--font-size-btn);
 }
 
@@ -35,8 +36,12 @@ p {
     font-size: var(--font-size-p);
 }
 
-menu {
+.menu {
     font-size: var(--font-size-menu);
+}
+
+.footer_txt {
+    font-size: var(--font-size-footer);
 }
 
 em {

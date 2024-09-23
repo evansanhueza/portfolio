@@ -7,6 +7,11 @@
 
             <div class="wrapper">
 
+                <div class="titre">
+                    <h1>Évan Sanhueza</h1>
+                    <h2>Apprenti artiste 3D</h2>
+                </div>
+
                 <?php the_content(); ?>
 
             </div>
