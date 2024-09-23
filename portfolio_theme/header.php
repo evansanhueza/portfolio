@@ -17,7 +17,24 @@
 
   <body <?php body_class(); ?>>
     <header class="header" >
-     
-      
+      <div class="wrapper">
 
-  </header>
+        <a href="<?php bloginfo('url'); ?>" class="brand">
+            <svg class="icon icon--lg">
+              <use xlink:href="#icon-logo"></use>
+            </svg>
+        </a>
+
+        <?php wp_nav_menu(array(
+            'theme_location' => 'menu_principal',
+            'container' => 'nav',
+        )); ?>
+
+        <!-- <button class="header__toggle js-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+        </button> -->
+
+      </div>
+    </header>

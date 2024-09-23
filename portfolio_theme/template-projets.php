@@ -1,9 +1,13 @@
+<?php
+/* Template Name: Projets */
+?>
+
 <?php get_header(); ?>
 
     <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
 
-        <section class="accueil">
+        <section class="section">
 
             <div class="wrapper">
 

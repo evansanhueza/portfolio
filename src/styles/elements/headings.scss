@@ -5,9 +5,9 @@
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+btn,
+p,
+menu {
     font-family: var(--font-secondary);
     line-height: 1.1;
     font-weight: bold;
@@ -27,16 +27,16 @@ h3 {
     font-size: var(--font-size-h3);
 }
 
-h4 {
-    font-size: var(--font-size-h4);
+btn {
+    font-size: var(--font-size-btn);
 }
 
-h5 {
-    font-size: var(--font-size-h5);
+p {
+    font-size: var(--font-size-p);
 }
 
-h6 {
-    font-size: var(--font-size-h6);
+menu {
+    font-size: var(--font-size-menu);
 }
 
 em {
