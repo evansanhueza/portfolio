@@ -3,6 +3,16 @@
     <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
 
+        <div class="overlay" data-component="Loading">
+            <div class="overlayDoor"></div>
+            <div class="overlayContent">
+                <div class="loader">
+                    <div class="inner"></div>
+                </div>
+                <div class="skip">Entrer dans mon site</div>
+            </div>
+        </div>
+
         <section class="accueil">
 
             <div class="wrapper">
@@ -12,7 +22,11 @@
                     <h2>Apprenti artiste 3D</h2>
                 </div>
 
-                <?php the_content(); ?>
+                <video class="video" autoplay muted loop>
+                    <source src="<?php bloginfo('template_url'); ?>/dist/assets/video/demo_projets.mp4" type="video/mp4">
+                </video>
+
+                <button class="btn">Voir mes projets</button>
 
             </div>
             

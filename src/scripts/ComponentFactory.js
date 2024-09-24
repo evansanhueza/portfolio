@@ -1,10 +1,12 @@
 import Carousel from './components/Carousel';
+import Loading from './components/Loading';
 
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
     this.componentList = {
       Carousel,
+      Loading,
     };
     this.init();
   }
