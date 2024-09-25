@@ -9,5 +9,15 @@
             height: 100%;
             width: 100%;
         }
+
+        .btn {
+            margin: auto;
+            background: var(--color-accent);
+            box-shadow: 10px 10px 5px;
+        }
+
+        .btn:hover {
+            box-shadow: 10px 10px 5px inset;
+        }
     }
 }

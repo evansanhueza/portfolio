@@ -6,17 +6,21 @@ export default class Carousel {
     this.options = {
       slidesPerView: 1,
       margin: 0,
+      spaceBetween: 20,
       pagination: {
-        el: this.element.querySelector('.swiper-pagination'),
-        type: 'bullets',
+        el: '.swiper-pagination',
+        clickable: true,
       },
+
       navigation: {
         nextEl: this.element.querySelector('.swiper-button-next'),
         prevEl: this.element.querySelector('.swiper-button-prev'),
       },
+
       breakpoints: '',
       autoplay: '',
       loop: '',
+      freeMode: false,
     };
 
     this.init();
@@ -31,46 +35,53 @@ export default class Carousel {
   setOptions() {
     const variant = this.element.dataset.variant;
 
-    if (variant == 'split') {
-      this.options.loop = {
-        loop: true,
-      };
+    if (variant == 'freemode') {
+      this.options.slidesPerView = 3;
+      this.options.freeMode = true;
+
       this.options.breakpoints = {
-        768: {
-          slidesPerView: 2.5,
+        1440: {
+          slidesPerView: 3.5,
         },
-      };
-    }
-    if (variant == 'split2') {
-      this.options.loop = {
-        loop: false,
-      };
-      this.options.breakpoints = {
+
         768: {
-          slidesPerView: 2,
+          slidesPerView: 1.9,
         },
-      };
-    }
-    if ('autoplay' in this.element.dataset) {
-      this.options.autoplay = {
-        delay: 5000,
-        pauseOnMouseEnter: true,
-        disableOnInteraction: false,
+
+        375: {
+          slidesPerView: 1,
+        },
       };
     }
 
     if ('loop' in this.element.dataset) {
       this.options.loop = {
         loop: true,
+        slidesPerView: 1.5,
+      };
+
+      this.options.breakpoints = {
+        1440: {
+          slidesPerView: 2,
+        },
+
+        768: {
+          slidesPerView: 1.2,
+        },
+
+        375: {
+          slidesPerView: 1,
+        },
       };
     }
 
-    // if ('slidePerView' in this.element.dataset) {
-    //   this.options.slidesPerView = this.element.dataset.slidesPerView;
-    // }
-
-    // if ('wheels' in this.element.dataset) {
-    //   this.options.wheels = parseInt(this.element.dataset.wheels);
-    // }
+    if ('autoplay' in this.element.dataset) {
+      this.options.autoplay = {
+        delay: 2000,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: false,
+        slidesPerView: 1,
+      };
+    }
   }
 }
