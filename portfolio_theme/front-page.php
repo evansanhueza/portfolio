@@ -18,8 +18,12 @@
             <div class="wrapper">
 
                 <div class="titre">
-                    <h1>Évan Sanhueza</h1>
-                    <h2>Apprenti artiste 3D</h2>
+                    <?php if (get_field('nom', 'options')): ?>
+                        <h1><?php the_field('nom', 'options'); ?></h1> 
+                    <?php endif; ?>
+                    <?php if (get_field('profession', 'options')): ?>
+                        <h2><?php the_field('profession', 'options'); ?></h2> 
+                    <?php endif; ?>
                 </div>
 
                 <video class="video" autoplay muted loop>
