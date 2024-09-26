@@ -1,23 +1,44 @@
 .accueil {
     .wrapper {
-        .titre {
-            background: var(--color-secondary);
-            color: var(--color-bg-primary);
-        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .video_boite {
+            position: relative;
+            .titre {
+                background: var(--color-secondary);
+                color: var(--color-bg-primary);
+                width: fit-content;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                padding: 25px;
+                gap: 20px;
+                box-shadow: 10px 10px 10px var(--color-black);
+                position: absolute;
+                left: 5%;
+            }
 
-        .video {
-            height: 100%;
-            width: 100%;
-        }
+            .video {
+                height: 100%;
+                width: 100%;
+                border: solid var(--color-secondary) 20px;
+            }
 
-        .btn {
-            margin: auto;
-            background: var(--color-accent);
-            box-shadow: 10px 10px 5px;
-        }
+            .btn {
+                margin: auto;
+                background: var(--color-accent);
+                box-shadow: 10px 10px 10px;
+                padding: 10px 20px;
+                position: absolute;
+                bottom: 0;
+                right: 5%;
+            }
 
-        .btn:hover {
-            box-shadow: 10px 10px 5px inset;
+            .btn:hover {
+                box-shadow: 10px 10px 10px inset;
+                text-decoration: none;
+            }
         }
     }
 }

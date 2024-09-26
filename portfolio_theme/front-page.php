@@ -17,20 +17,24 @@
 
             <div class="wrapper">
 
-                <div class="titre">
-                    <?php if (get_field('nom', 'options')): ?>
-                        <h1><?php the_field('nom', 'options'); ?></h1> 
-                    <?php endif; ?>
-                    <?php if (get_field('profession', 'options')): ?>
-                        <h2><?php the_field('profession', 'options'); ?></h2> 
-                    <?php endif; ?>
+                <div class="video_boite">
+
+                    <div class="titre">
+                        <?php if (get_field('nom', 'options')): ?>
+                            <h1><?php the_field('nom', 'options'); ?></h1> 
+                        <?php endif; ?>
+                        <?php if (get_field('profession', 'options')): ?>
+                            <h2><?php the_field('profession', 'options'); ?></h2> 
+                        <?php endif; ?>
+                    </div>
+
+                    <a href="<?php echo get_permalink(get_page_by_path('projets')); ?>"  class="btn">Voir mes projets</a>
+
+                    <video class="video" autoplay muted loop>
+                        <source src="<?php bloginfo('template_url'); ?>/dist/assets/video/demo_projets.mp4" type="video/mp4">
+                    </video>
+
                 </div>
-
-                <video class="video" autoplay muted loop>
-                    <source src="<?php bloginfo('template_url'); ?>/dist/assets/video/demo_projets.mp4" type="video/mp4">
-                </video>
-
-                <a href="<?php echo get_permalink(get_page_by_path('projets')); ?>"  class="btn">Voir mes projets</a>
 
             </div>
             
