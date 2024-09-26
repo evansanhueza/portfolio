@@ -7,16 +7,23 @@
     <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
 
-        <section class="section">
+        <section class="a_propos">
 
             <div class="wrapper">
 
                 <div class="carousel swiper" data-component="Carousel">
                     <div class="swiper-wrapper">
 
-                        <div class="swiper-slide">
-                            <?php the_post_thumbnail(); ?>
-                            <div>
+                        <div class="swiper-slide propos1">
+                            <div class="propos_img">
+                                <?php the_post_thumbnail(); ?>
+
+                                <?php if (get_field('profession', 'options')): ?>
+                                    <h2><?php the_field('profession', 'options'); ?></h2> 
+                                <?php endif; ?>
+                            </div>
+                            
+                            <div class="infos_moi">
                                 <?php if (get_field('nom', 'options')): ?>
                                     <h1><?php the_field('nom', 'options'); ?></h1> 
                                 <?php endif; ?>
@@ -25,18 +32,32 @@
                                     <h3><?php the_field('courte_description', 'options'); ?></h3> 
                                 <?php endif; ?>
 
-                                <?php if (get_field('profession', 'options')): ?>
-                                    <h2><?php the_field('profession', 'options'); ?></h2> 
-                                <?php endif; ?>
                             </div>
+                            
                         </div>
 
-                        <div class="swiper-slide">
+                        <div class="swiper-slide propos2">
                             <?php if (get_field('canditature', 'options')): ?>
                                 <h3><?php the_field('canditature', 'options'); ?></h3> 
                             <?php endif; ?>
 
                             <div class="icones_passions">
+
+                                <svg class="icon icon--lg">
+                                    <use xlink:href="#icon-logo"></use>
+                                </svg>
+
+                                <svg class="icon icon--lg">
+                                    <use xlink:href="#icon-logo"></use>
+                                </svg>
+
+                                <svg class="icon icon--lg">
+                                    <use xlink:href="#icon-logo"></use>
+                                </svg>
+
+                                <svg class="icon icon--lg">
+                                    <use xlink:href="#icon-logo"></use>
+                                </svg>
 
                             </div>
                             
