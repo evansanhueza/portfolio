@@ -14,7 +14,6 @@
                 align-items: center;
                 padding: 25px;
                 gap: 20px;
-                box-shadow: 10px 10px 10px var(--color-black);
                 position: absolute;
                 left: 5%;
             }
@@ -28,17 +27,19 @@
 
             .btn {
                 margin: auto;
-                background: var(--color-accent);
-                box-shadow: 10px 10px 10px;
+                background: var(--color-secondary);
                 padding: 10px 20px;
                 position: absolute;
                 bottom: 0;
                 right: 5%;
+                border: var(--color-bg-primary) 4px solid;
+                color: var(--color-bg-primary);
             }
 
             .btn:hover {
-                box-shadow: 10px 10px 10px inset;
                 text-decoration: none;
+                background: var(--color-accent);
+                color: var(--color-primary);
             }
         }
     }

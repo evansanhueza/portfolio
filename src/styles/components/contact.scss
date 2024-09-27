@@ -1,0 +1,38 @@
+.page_contact {
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            font-family: var(--font-secondary);
+
+            .infos_contact {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: var(--color-secondary) 4px solid;
+                padding: 20px;
+            }
+
+            .icones_reseaux {
+                ul {
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    list-style: none;
+                }
+            }
+        }
+
+        .form {
+            border: var(--color-secondary) 4px solid;
+            padding: 20px;
+        }
+    }
+}

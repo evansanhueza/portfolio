@@ -7,7 +7,7 @@
     <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
 
-        <section class="section">
+        <section class="page_contact">
 
             <div class="wrapper">
 
@@ -26,7 +26,23 @@
                     </div>
 
                     <div class="icones_reseaux">
+                        <?php if( have_rows('sociaux', 'options') ): ?>
+                            <nav class="nav-social">
+                                <ul>
+                                    <?php while( have_rows('sociaux', 'options') ) : the_row(); ?>
 
+                                        <li>
+                                            <a href="<?php the_sub_field('lien', 'options'); ?>" class="nav__link <?php the_sub_field('nom', 'options'); ?>">
+                                                <svg class="icon icon--lg">
+                                                    <use xlink:href="#icon-<?php the_sub_field('nom', 'options'); ?>"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+
+                                    <?php endwhile; ?>
+                                </ul>
+                            </nav>
+                        <?php endif; ?>
                     </div>
                 </div>
 
