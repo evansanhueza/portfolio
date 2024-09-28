@@ -20,12 +20,17 @@
             }
 
             .icones_reseaux {
+                display: flex;
+
                 ul {
                     display: grid;
+                    grid-template-columns: auto auto auto;
+                    grid-gap: 20px;
                     justify-content: center;
                     align-items: center;
                     text-decoration: none;
                     list-style: none;
+                    padding: 0;
                 }
             }
         }
