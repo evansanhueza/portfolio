@@ -43,6 +43,23 @@
                         height: 100%;
                     }
                 }
+
+                .propos3 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .bloc1 {
+                    }
+
+                    .bloc2 {
+                    }
+
+                    .ligne {
+                        border-left: 6px solid green;
+                        height: 500px;
+                    }
+                }
             }
         }
     }

@@ -66,7 +66,31 @@
                             <?php endif; ?>
                         </div>
 
-                        
+                        <div class="swiper-slide propos3">
+
+                                <div class="bloc1">
+
+                                    <h2>Ce que je suis</h2>
+
+                                    <div class="je_suis">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="ligne"></div>
+
+                                <div class="bloc2">
+
+                                    <h2>Ce que je peux faire</h2>
+
+                                    <div class="je_fais">
+
+                                    </div>
+
+                                </div>
+                            
+                        </div>
 
                     </div>
 
