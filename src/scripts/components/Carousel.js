@@ -6,7 +6,7 @@ export default class Carousel {
     this.options = {
       slidesPerView: 1,
       margin: 0,
-      spaceBetween: 20,
+      spaceBetween: 50,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -57,16 +57,16 @@ export default class Carousel {
     if ('loop' in this.element.dataset) {
       this.options.loop = {
         loop: true,
-        slidesPerView: 1.5,
+        slidesPerView: 1,
       };
 
       this.options.breakpoints = {
         1440: {
-          slidesPerView: 2,
+          slidesPerView: 1,
         },
 
         768: {
-          slidesPerView: 1.2,
+          slidesPerView: 1,
         },
 
         375: {

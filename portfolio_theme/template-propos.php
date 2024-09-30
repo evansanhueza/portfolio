@@ -11,16 +11,16 @@
 
             <div class="wrapper">
 
-                <div class="carousel swiper" data-component="Carousel">
+                <div class="carousel swiper" data-component="Carousel" data-loop="true">
                     <div class="swiper-wrapper">
 
                         <div class="swiper-slide propos1">
                             <div class="propos_img">
-                                <?php the_post_thumbnail(); ?>
-
                                 <?php if (get_field('profession', 'options')): ?>
                                     <h2><?php the_field('profession', 'options'); ?></h2> 
                                 <?php endif; ?>
+
+                                <?php the_post_thumbnail(); ?>
                             </div>
                             
                             <div class="infos_moi">
@@ -44,19 +44,19 @@
                             <div class="icones_passions">
 
                                 <svg class="icon icon--lg">
-                                    <use xlink:href="#icon-logo"></use>
+                                    <use xlink:href="#icon-3d"></use>
                                 </svg>
 
                                 <svg class="icon icon--lg">
-                                    <use xlink:href="#icon-logo"></use>
+                                    <use xlink:href="#icon-manette"></use>
                                 </svg>
 
                                 <svg class="icon icon--lg">
-                                    <use xlink:href="#icon-logo"></use>
+                                    <use xlink:href="#icon-camera"></use>
                                 </svg>
 
                                 <svg class="icon icon--lg">
-                                    <use xlink:href="#icon-logo"></use>
+                                    <use xlink:href="#icon-livre"></use>
                                 </svg>
 
                             </div>
@@ -74,7 +74,10 @@
 
                                     <ul class="je_suis">
 
-
+                                        <li><h3>Sociable</h3></li>
+                                        <li><h3>Organisé</h3></li>
+                                        <li><h3>Bon en équipe</h3></li>
+                                        <li><h3>Ouvert aux critiques</h3></li>
 
                                     </ul>
 
@@ -90,11 +93,37 @@
 
                                         <ul class="talents">
 
+                                            <li><h3>Modélisation/animation 3D (Blender)</h3></li>
+                                            <li><h3>Montage vidéo/sonore (adobe After Effects/Premiere Pro, Reaper)</h3></li>
+                                            <li><h3>Programmation/design web (HTML, CSS, PHP/Mysql, figma)</h3></li>
                                         
                                         </ul>
 
                                         <ul class="talents_icones">
 
+                                            <li>
+                                                <svg class="icon icon--lg">
+                                                    <use xlink:href="#icon-livre"></use>
+                                                </svg>
+                                            </li>
+
+                                            <li>
+                                                <svg class="icon icon--lg">
+                                                    <use xlink:href="#icon-livre"></use>
+                                                </svg>
+                                            </li>
+
+                                            <li>
+                                                <svg class="icon icon--lg">
+                                                    <use xlink:href="#icon-livre"></use>
+                                                </svg>
+                                            </li>
+
+                                            <li>
+                                                <svg class="icon icon--lg">
+                                                    <use xlink:href="#icon-livre"></use>
+                                                </svg>
+                                            </li>
                                         
                                         </ul>
 

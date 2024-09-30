@@ -47,7 +47,9 @@
                 </div>
 
                 <div class="form">
+
                     <?php the_content(); ?>
+                    
                 </div>
 
             </div>
