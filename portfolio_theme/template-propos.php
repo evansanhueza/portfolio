@@ -72,9 +72,11 @@
 
                                     <h2>Ce que je suis</h2>
 
-                                    <div class="je_suis">
+                                    <ul class="je_suis">
 
-                                    </div>
+
+
+                                    </ul>
 
                                 </div>
 
@@ -85,6 +87,16 @@
                                     <h2>Ce que je peux faire</h2>
 
                                     <div class="je_fais">
+
+                                        <ul class="talents">
+
+                                        
+                                        </ul>
+
+                                        <ul class="talents_icones">
+
+                                        
+                                        </ul>
 
                                     </div>
 
