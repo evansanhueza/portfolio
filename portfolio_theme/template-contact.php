@@ -13,14 +13,14 @@
 
                 <div class="contact">
                     <div class="infos_contact">
-                        Mon cv: <a href="" download>télécharger</a>
+                        <h2>Mon cv: <a href="" download class="download">télécharger</a></h2>
 
                         <?php if (get_field('telephone', 'options')): ?>
-                             <a href="tel:+14387633339"><?php the_field('telephone', 'options'); ?></a>
+                             <h2><a href="tel:+14387633339"><?php the_field('telephone', 'options'); ?></a></h2>
                         <?php endif; ?>
 
                         <?php if (get_field('couriel', 'options')): ?>
-                            <a href="mailto:evan.sanhu@gmail.com"><?php the_field('couriel', 'options'); ?></a>
+                            <h2><a href="mailto:evan.sanhu@gmail.com"><?php the_field('couriel', 'options'); ?></a></h2> 
                         <?php endif; ?>
 
                     </div>
@@ -32,7 +32,7 @@
                                     <?php while( have_rows('sociaux', 'options') ) : the_row(); ?>
 
                                         <li>
-                                            <a href="<?php the_sub_field('lien', 'options'); ?>" class="nav__link <?php the_sub_field('nom', 'options'); ?>">
+                                            <a href="<?php the_sub_field('lien', 'options'); ?>" target="_blank" class="nav__link <?php the_sub_field('nom', 'options'); ?>">
                                                 <svg class="icon icon--lg">
                                                     <use xlink:href="#icon-<?php the_sub_field('nom', 'options'); ?>"></use>
                                                 </svg>
