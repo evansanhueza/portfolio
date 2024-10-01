@@ -103,25 +103,25 @@
 
                                             <li>
                                                 <svg class="icon icon--lg">
-                                                    <use xlink:href="#icon-livre"></use>
+                                                    <use xlink:href="#icon-blender"></use>
                                                 </svg>
                                             </li>
 
                                             <li>
                                                 <svg class="icon icon--lg">
-                                                    <use xlink:href="#icon-livre"></use>
+                                                    <use xlink:href="#icon-adobe"></use>
                                                 </svg>
                                             </li>
 
                                             <li>
                                                 <svg class="icon icon--lg">
-                                                    <use xlink:href="#icon-livre"></use>
+                                                    <use xlink:href="#icon-html"></use>
                                                 </svg>
                                             </li>
 
                                             <li>
                                                 <svg class="icon icon--lg">
-                                                    <use xlink:href="#icon-livre"></use>
+                                                    <use xlink:href="#icon-figma"></use>
                                                 </svg>
                                             </li>
                                         
