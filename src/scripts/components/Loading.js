@@ -7,9 +7,8 @@ export default class Loading {
     document.addEventListener('DOMContentLoaded', function () {
       const overlay = document.querySelector('.overlay');
       const body = document.body;
-      const skipButton = document.querySelector('.skip');
 
-      // Fonction pour cacher l'overlay après l'animation
+      // Fonction pour cacher l'overlay avec animation
       function hideOverlay() {
         overlay.classList.add('loaded');
         body.classList.add('loaded');
@@ -17,7 +16,7 @@ export default class Loading {
         // Attendre la fin de l'animation avant de cacher l'overlay
         setTimeout(() => {
           overlay.style.display = 'none'; // Cache l'overlay après l'animation
-        }, 3000); // Adapter cette durée à la durée de l'animation CSS
+        }, 3000); // Durée de l'animation (1 seconde ici)
       }
 
       // Vérifier si c'est la première visite de la session sur la page d'accueil
@@ -25,12 +24,10 @@ export default class Loading {
         // Si c'est la première visite dans cette session, montrer l'overlay
         overlay.style.display = 'block';
 
-        // Gestion du clic sur "Skip"
-        if (skipButton) {
-          skipButton.addEventListener('click', hideOverlay);
-        }
+        // Déclencher la disparition de l'overlay après un délai (par exemple, 3 secondes)
+        setTimeout(hideOverlay, 3000);
 
-        // Stocker que l'utilisateur a visité la page d'accueil pour cette session
+        // Stocker l'information que l'utilisateur a visité la page d'accueil pour cette session
         sessionStorage.setItem('hasVisited', 'true');
       } else {
         // Si ce n'est pas la première visite dans cette session, ne pas afficher l'overlay

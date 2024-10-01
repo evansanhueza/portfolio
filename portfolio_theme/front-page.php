@@ -9,7 +9,7 @@
                 <div class="loader">
                     <div class="inner"></div>
                 </div>
-                <div class="skip">Entrer dans mon site</div>
+                <h1 class="loading-title">Bienvenue sur mon site!</h1>
             </div>
         </div>
 
