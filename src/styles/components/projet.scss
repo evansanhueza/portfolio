@@ -1,0 +1,91 @@
+.un_projet {
+    .wrapper {
+        .carousel {
+            .swiper-wrapper {
+                .projet1 {
+                    .bloc1 {
+                        h1 {
+                            background: var(--color-secondary);
+                            color: var(--color-bg-primary);
+                            width: fit-content;
+                        }
+
+                        h3 {
+                            border: var(--color-secondary) 4px solid;
+                            padding: 20px;
+                        }
+                    }
+
+                    .bloc2 {
+                        h2 {
+                        }
+
+                        .description {
+                            border: var(--color-secondary) 4px solid;
+                            padding: 20px;
+                            h3 {
+                            }
+
+                            .icones {
+                                width: 100%;
+                                height: 100%;
+
+                                ul {
+                                    list-style: none;
+                                    display: flex;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .projet2 {
+                    .galerie {
+                        p {
+                            border: var(--color-secondary) 4px solid;
+                            padding: 20px;
+                        }
+
+                        img {
+                        }
+                    }
+                }
+
+                .projet3 {
+                    .img_solo {
+                        p {
+                            border: var(--color-secondary) 4px solid;
+                            padding: 20px;
+                        }
+
+                        img {
+                        }
+                    }
+
+                    .defis {
+                        h2 {
+                        }
+
+                        h3 {
+                            border: var(--color-secondary) 4px solid;
+                            padding: 20px;
+                        }
+
+                        .btn {
+                            background: var(--color-secondary);
+                            padding: 10px 20px;
+                            border: var(--color-bg-primary) 4px solid;
+                            color: var(--color-bg-primary);
+                        }
+
+                        .btn:hover {
+                            text-decoration: none;
+                            background: var(--color-accent);
+                            color: var(--color-primary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

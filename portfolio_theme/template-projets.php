@@ -37,7 +37,7 @@
                                     <div class="bloc_infos">
                                         <h2><?php the_title(); ?> (<?php the_date('Y'); ?>)</h2>
 
-                                        <div>
+                                        <div class="boite_resume">
 
                                             <?php if (get_field('resume')) : ?>
                                                 <h3><?php the_field('resume'); ?></h3>
