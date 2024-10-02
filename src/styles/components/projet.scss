@@ -1,29 +1,57 @@
 .un_projet {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+
         .carousel {
             .swiper-wrapper {
+                display: flex;
+                align-items: center;
+                padding-bottom: 10vh;
+
                 .projet1 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 30px;
+
                     .bloc1 {
                         h1 {
                             background: var(--color-secondary);
                             color: var(--color-bg-primary);
-                            width: fit-content;
+                            padding: 15px;
                         }
 
                         h3 {
                             border: var(--color-secondary) 4px solid;
                             padding: 20px;
+                            text-align: center;
                         }
                     }
 
                     .bloc2 {
                         h2 {
+                            background: var(--color-secondary);
+                            color: var(--color-bg-primary);
+                            padding: 15px;
+                            text-align: right;
                         }
 
                         .description {
                             border: var(--color-secondary) 4px solid;
                             padding: 20px;
+                            gap: 20px;
+
                             h3 {
+                                text-align: center;
                             }
 
                             .icones {
@@ -33,6 +61,9 @@
                                 ul {
                                     list-style: none;
                                     display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    margin: 0;
                                 }
                             }
                         }

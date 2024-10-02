@@ -1,8 +1,22 @@
 .a_propos {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+
         .carousel {
             .swiper-wrapper {
+                display: flex;
                 align-items: center;
+                padding-bottom: 10vh;
+
                 .propos1 {
                     display: flex;
                     gap: 30px;

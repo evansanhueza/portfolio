@@ -1,8 +1,16 @@
 .accueil {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     .wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 100%;
+        width: 100%;
+
         .video_boite {
             position: relative;
             .titre {

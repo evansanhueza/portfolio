@@ -16,8 +16,8 @@
 
                                 <h1><?php the_title(); ?> (<?php the_date('Y'); ?>)</h1>
 
-                                <?php if (get_field('description')) : ?>
-                                    <h3><?php the_field('description'); ?></h3>
+                                <?php if (get_field('contexte')) : ?>
+                                    <h3><?php the_field('contexte'); ?></h3>
                                 <?php endif; ?>
 
                             </div>
