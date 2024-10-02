@@ -25,7 +25,7 @@ export default class Loading {
         overlay.style.display = 'block';
 
         // Déclencher la disparition de l'overlay après un délai (par exemple, 3 secondes)
-        setTimeout(hideOverlay, 3000);
+        setTimeout(hideOverlay, 1500);
 
         // Stocker l'information que l'utilisateur a visité la page d'accueil pour cette session
         sessionStorage.setItem('hasVisited', 'true');

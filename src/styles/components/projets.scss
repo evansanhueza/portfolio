@@ -19,12 +19,16 @@
 
                 .projet_presentation {
                     display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
                     gap: 30px;
 
                     .bloc_image {
+                        position: relative;
+
                         img {
                             height: 100%;
-                            max-width: 500px;
+                            max-width: 70vh;
                             border: solid var(--color-secondary) 20px;
                         }
 
@@ -33,8 +37,8 @@
                             background: var(--color-secondary);
                             padding: 10px 20px;
                             position: absolute;
-                            top: 100%;
-                            left: 3%;
+                            bottom: 0;
+                            left: 5%;
                             border: var(--color-bg-primary) 4px solid;
                             color: var(--color-bg-primary);
                         }

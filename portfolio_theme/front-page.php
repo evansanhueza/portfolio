@@ -9,7 +9,7 @@
                 <div class="loader">
                     <div class="inner"></div>
                 </div>
-                <h1 class="loading-title">Bienvenue sur mon site!</h1>
+                <h1 class="loading-title">Bienvenue sur mon site !</h1>
             </div>
         </div>
 

@@ -78,19 +78,19 @@
 
                         <div class="swiper-slide projet3">
 
-                            <?php if( have_rows('groupe_image') ): ?>
-                                <?php while( have_rows('groupe_image') ) : the_row(); ?>
+                            <?php if( have_rows('groupe_video') ): ?>
+                                <?php while( have_rows('groupe_video') ) : the_row(); ?>
 
-                                    <div class="img_solo">
+                                    <div class="bloc_video">
 
-                                        <p><?php the_sub_field('explication_seule'); ?></p>
+                                        <p><?php the_sub_field('explication_video'); ?></p>
 
-                                        <?php 
-                                            $image = get_sub_field('image_seule');
-                                            if( !empty( $image ) ):
-                                            ?>
-                                                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                                        <?php endif; ?>    
+                                        <div class="video">
+
+                                            <?php $embedcode = the_sub_field('video'); ?>
+                                            <iframe src="<?php echo $embedcode; ?>" frameborder="0"></iframe>
+
+                                        </div> 
 
                                     </div>
 
@@ -105,8 +105,9 @@
                                     <h3><?php the_field('defis_techniques'); ?></h3>
                                 <?php endif; ?>
 
-                                <a href=""  class="btn">Voir plus</a>
-
+                                <?php if (get_field('lien_projet')) : ?>
+                                    <a href="<?php the_field('lien_projet'); ?>"  class="btn">Voir plus</a>
+                                <?php endif; ?>
                             </div>
                         </div>
 

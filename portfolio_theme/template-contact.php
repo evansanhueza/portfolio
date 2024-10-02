@@ -13,7 +13,7 @@
 
                 <div class="contact">
                     <div class="infos_contact">
-                        <h2>Mon cv: <a href="" download class="download">télécharger</a></h2>
+                        <h2>Mon cv : <a href="" download class="download">télécharger</a></h2>
 
                         <?php if (get_field('telephone', 'options')): ?>
                              <h2><a href="tel:+14387633339"><?php the_field('telephone', 'options'); ?></a></h2>
