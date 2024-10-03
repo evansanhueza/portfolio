@@ -13,14 +13,14 @@
 
                 <div class="contact">
                     <div class="infos_contact">
-                        <h2>Mon cv : <a href="" download class="download">télécharger</a></h2>
+                        <h3>Mon cv : <a href="" download class="download">télécharger</a></h3>
 
                         <?php if (get_field('telephone', 'options')): ?>
-                             <h2><a href="tel:+14387633339"><?php the_field('telephone', 'options'); ?></a></h2>
+                             <h3><a href="tel:+14387633339"><?php the_field('telephone', 'options'); ?></a></h3>
                         <?php endif; ?>
 
                         <?php if (get_field('couriel', 'options')): ?>
-                            <h2><a href="mailto:evan.sanhu@gmail.com"><?php the_field('couriel', 'options'); ?></a></h2> 
+                            <h3><a href="mailto:evan.sanhu@gmail.com"><?php the_field('couriel', 'options'); ?></a></h3> 
                         <?php endif; ?>
 
                     </div>

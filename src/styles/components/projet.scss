@@ -19,11 +19,13 @@
 
                 .projet1 {
                     display: flex;
-                    align-items: center;
+                    align-items: flex-start;
                     justify-content: center;
-                    gap: 30px;
+                    gap: 50px;
 
                     .bloc1 {
+                        max-width: 40%;
+
                         h1 {
                             background: var(--color-secondary);
                             color: var(--color-bg-primary);
@@ -38,6 +40,8 @@
                     }
 
                     .bloc2 {
+                        max-width: 40%;
+
                         h2 {
                             background: var(--color-secondary);
                             color: var(--color-bg-primary);
@@ -48,7 +52,11 @@
                         .description {
                             border: var(--color-secondary) 4px solid;
                             padding: 20px;
-                            gap: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 30px;
 
                             h3 {
                                 text-align: center;
@@ -64,6 +72,7 @@
                                     align-items: center;
                                     justify-content: center;
                                     margin: 0;
+                                    padding: 0;
                                 }
                             }
                         }
@@ -71,30 +80,83 @@
                 }
 
                 .projet2 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 20px;
+
                     .galerie {
-                        p {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 20px;
+
+                        .explication {
                             border: var(--color-secondary) 4px solid;
-                            padding: 20px;
+                            height: 100%;
+                            max-width: 40%;
+                            text-align: center;
+
+                            p {
+                                padding: 20px;
+                            }
                         }
 
                         img {
+                            height: 100%;
+                            max-width: 50vh;
+                            border: solid var(--color-secondary) 20px;
                         }
                     }
                 }
 
                 .projet3 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10%;
+
                     .bloc_video {
-                        p {
-                            border: var(--color-secondary) 4px solid;
-                            padding: 20px;
-                        }
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 20px;
 
                         .video {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .frame {
+                                position: absolute;
+                                z-index: -1;
+                            }
+                        }
+
+                        .explication {
+                            border: var(--color-secondary) 4px solid;
+                            height: 100%;
+                            text-align: center;
+
+                            p {
+                                padding: 20px;
+                            }
                         }
                     }
 
                     .defis {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        justify-content: center;
+
                         h2 {
+                            background: var(--color-secondary);
+                            color: var(--color-bg-primary);
+                            padding: 15px;
+                            text-align: right;
                         }
 
                         h3 {
@@ -105,7 +167,7 @@
                         .btn {
                             background: var(--color-secondary);
                             padding: 10px 20px;
-                            border: var(--color-bg-primary) 4px solid;
+                            border: var(--color-accent) 4px solid;
                             color: var(--color-bg-primary);
                         }
 

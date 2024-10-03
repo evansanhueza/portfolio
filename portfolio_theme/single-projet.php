@@ -60,7 +60,8 @@
 
                                     <div class="galerie">
 
-                                        <p><?php the_sub_field('explication'); ?></p>
+                                        <div class="explication"><p><?php the_sub_field('explication'); ?></p></div>
+                                        
 
                                         <?php 
                                             $image = get_sub_field('image');
@@ -83,14 +84,14 @@
 
                                     <div class="bloc_video">
 
-                                        <p><?php the_sub_field('explication_video'); ?></p>
-
                                         <div class="video">
 
                                             <?php $embedcode = the_sub_field('video'); ?>
-                                            <iframe src="<?php echo $embedcode; ?>" frameborder="0"></iframe>
+                                            <iframe class="frame" src="<?php echo $embedcode; ?>" width="600" height="350" frameborder="0"></iframe>
 
                                         </div> 
+
+                                        <div class="explication"><p><?php the_sub_field('explication_video'); ?></p></div>     
 
                                     </div>
 
@@ -106,7 +107,7 @@
                                 <?php endif; ?>
 
                                 <?php if (get_field('lien_projet')) : ?>
-                                    <a href="<?php the_field('lien_projet'); ?>"  class="btn">Voir plus</a>
+                                    <a href="<?php the_field('lien_projet'); ?>" target="_blank"  class="btn">Voir encore plus</a>
                                 <?php endif; ?>
                             </div>
                         </div>
