@@ -1,5 +1,6 @@
 import Carousel from './components/Carousel';
 import Loading from './components/Loading';
+import Fading from './components/Fading';
 
 export default class ComponentFactory {
   constructor() {
@@ -7,6 +8,7 @@ export default class ComponentFactory {
     this.componentList = {
       Carousel,
       Loading,
+      Fading,
     };
     this.init();
   }
