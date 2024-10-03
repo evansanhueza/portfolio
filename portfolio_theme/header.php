@@ -19,7 +19,11 @@
     <?php wp_head(); ?>
   </head>
 
-  <body <?php body_class(); ?> data-component="Fading">
+  <body <?php body_class(); ?> data-component="Cursor">
+    
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
     <header class="header" >
       <div class="wrapper">
 

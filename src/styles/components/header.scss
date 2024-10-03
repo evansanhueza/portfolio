@@ -8,18 +8,12 @@
         justify-content: space-between;
 
         .brand {
-            animation: fadeInLogo 1s ease-out;
+            transition: 0.5s ease-out;
         }
 
-        @keyframes fadeInLogo {
-            0% {
-                opacity: 0;
-                transform: translateY(-50px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .brand:hover {
+            color: var(--color-accent);
+            transition: 0.5s ease-out;
         }
 
         .menu {
@@ -47,7 +41,7 @@
                     background-color: var(--color-primary);
                     transform: scaleX(0);
                     transform-origin: right;
-                    transition: transform 0.3s ease-out;
+                    transition: transform 0.5s ease-out;
                 }
 
                 li a:hover::before {

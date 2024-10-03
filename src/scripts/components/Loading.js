@@ -36,3 +36,5 @@ export default class Loading {
     });
   }
 }
+
+//Copyright (c) 2024 by Gibbu (https://codepen.io/Gibbu/pen/jwjVKG)
