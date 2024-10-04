@@ -21,13 +21,35 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-    color: var(--color-primary);
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+
     //top: var(--swiper-navigation-top-offset, 50%);
     top: var(--swiper-navigation-top-offset, 95%);
 }
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 16px;
+    color: var(--color-bg-primary);
+    transition: 0.5s ease;
+}
+
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-    color: var(--color-accent);
-    box-shadow: 0 0 0 5px rgba(#fff, 0.4), 0 0 0 10px #f05f75;
+    transform: scale(1.2);
+    background-color: var(--color-accent);
+    transition: 0.5s ease;
+}
+
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover::after {
+    color: var(--color-primary);
+    transition: 0.5s ease;
 }

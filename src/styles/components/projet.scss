@@ -170,12 +170,14 @@
                             padding: 10px 20px;
                             border: var(--color-accent) 4px solid;
                             color: var(--color-bg-primary);
+                            transition: 1s ease-out;
                         }
 
                         .btn:hover {
                             text-decoration: none;
                             background: var(--color-accent);
                             color: var(--color-primary);
+                            transition: 1s ease-out;
                         }
                     }
                 }
