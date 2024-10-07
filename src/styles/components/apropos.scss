@@ -28,7 +28,15 @@
                             width: auto;
                             height: auto;
                             border: solid var(--color-secondary) 20px;
+                            filter: grayscale(1) drop-shadow(2px 4px 6px black);
+                            transition: 1s ease-out;
                         }
+
+                        img:hover {
+                            filter: grayscale(0);
+                            transition: 1s ease-out;
+                        }
+
                         h2 {
                             color: var(--color-bg-primary);
                             background: var(--color-secondary);
@@ -36,6 +44,7 @@
                             bottom: 15%;
                             left: 40%;
                             padding: 15px;
+                            z-index: 7;
                         }
                     }
 

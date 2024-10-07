@@ -19,14 +19,14 @@
 
                 <div class="video_boite">
 
-                    <div class="titre">
+                    <a href="<?php echo get_permalink(get_page_by_path('a-propos')); ?>" class="titre">
                         <?php if (get_field('nom', 'options')): ?>
                             <h1><?php the_field('nom', 'options'); ?></h1> 
                         <?php endif; ?>
                         <?php if (get_field('profession', 'options')): ?>
                             <h2><?php the_field('profession', 'options'); ?></h2> 
                         <?php endif; ?>
-                    </div>
+                    </a>
 
                     <a href="<?php echo get_permalink(get_page_by_path('projets')); ?>"  class="btn">Voir mes projets</a>
 
