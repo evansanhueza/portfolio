@@ -73,6 +73,7 @@
                                     justify-content: center;
                                     margin: 0;
                                     padding: 0;
+                                    gap: 20px;
                                 }
                             }
                         }
@@ -115,7 +116,7 @@
                     display: flex;
                     align-items: flex-start;
                     justify-content: center;
-                    gap: 10%;
+                    gap: 5%;
 
                     .bloc_video {
                         display: flex;
