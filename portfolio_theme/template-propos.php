@@ -37,40 +37,51 @@
                         </div>
 
                         <div class="swiper-slide propos2">
-                            <?php if (get_field('canditature', 'options')): ?>
-                                <h3><?php the_field('canditature', 'options'); ?></h3> 
-                            <?php endif; ?>
 
-                            <div class="icones_passions">
+                            <h2>Un petit résumé de moi</h2>
 
-                                <svg class="icon icon--lg">
-                                    <use xlink:href="#icon-3d"></use>
-                                </svg>
+                            <div class="propos2_cont">
 
-                                <svg class="icon icon--lg">
-                                    <use xlink:href="#icon-manette"></use>
-                                </svg>
+                                
 
-                                <svg class="icon icon--lg">
-                                    <use xlink:href="#icon-camera"></use>
-                                </svg>
+                                <?php if (get_field('canditature', 'options')): ?>
+                                    <h3><?php the_field('canditature', 'options'); ?></h3> 
+                                <?php endif; ?>
 
-                                <svg class="icon icon--lg">
-                                    <use xlink:href="#icon-livre"></use>
-                                </svg>
+                                <div class="icones_passions">
 
-                            </div>
+                                    <svg class="icon icon--lg">
+                                        <use xlink:href="#icon-3d"></use>
+                                    </svg>
+
+                                    <svg class="icon icon--lg">
+                                        <use xlink:href="#icon-manette"></use>
+                                    </svg>
+
+                                    <svg class="icon icon--lg">
+                                        <use xlink:href="#icon-camera"></use>
+                                    </svg>
+
+                                    <svg class="icon icon--lg">
+                                        <use xlink:href="#icon-livre"></use>
+                                    </svg>
+
+                                </div>
+                                
+                                <?php if (get_field('passions', 'options')): ?>
+                                    <h3><?php the_field('passions', 'options'); ?></h3> 
+                                <?php endif; ?>
+                                
+                            </div>   
+
                             
-                            <?php if (get_field('passions', 'options')): ?>
-                                <h3><?php the_field('passions', 'options'); ?></h3> 
-                            <?php endif; ?>
                         </div>
 
                         <div class="swiper-slide propos3">
 
                                 <div class="bloc1">
 
-                                    <h2>Ce que je suis</h2>
+                                    <h2>Mes qualités</h2>
 
                                     <ul class="je_suis">
 
@@ -87,7 +98,7 @@
 
                                 <div class="bloc2">
 
-                                    <h2>Ce que je peux faire</h2>
+                                    <h2>Mes compétences</h2>
 
                                     <div class="je_fais">
 

@@ -19,7 +19,7 @@
 
                 .projet1 {
                     display: flex;
-                    align-items: flex-start;
+                    align-items: center;
                     justify-content: center;
                     gap: 50px;
 
@@ -108,13 +108,21 @@
                             height: 100%;
                             max-width: 50vh;
                             border: solid var(--color-secondary) 20px;
+                            filter: grayscale(1) drop-shadow(2px 4px 6px black);
+                            transition: 1s ease-out;
+                        }
+
+                        img:hover {
+                            filter: grayscale(0);
+                            transition: 1s ease-out;
+                            text-decoration: none;
                         }
                     }
                 }
 
                 .projet3 {
                     display: flex;
-                    align-items: flex-start;
+                    align-items: center;
                     justify-content: center;
                     gap: 5%;
 
@@ -150,7 +158,6 @@
                     .defis {
                         display: flex;
                         flex-direction: column;
-                        align-items: flex-end;
                         justify-content: center;
 
                         h2 {
@@ -172,6 +179,7 @@
                             border: var(--color-accent) 4px solid;
                             color: var(--color-bg-primary);
                             transition: 1s ease-out;
+                            width: fit-content;
                         }
 
                         .btn:hover {

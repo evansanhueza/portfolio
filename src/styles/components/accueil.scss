@@ -27,6 +27,7 @@
                 left: 5%;
                 border: var(--color-accent) 4px solid;
                 z-index: 8;
+                transition: 1s ease-out;
             }
 
             .titre:hover {

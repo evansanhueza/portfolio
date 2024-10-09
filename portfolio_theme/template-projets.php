@@ -31,11 +31,11 @@
 
                                     <div class="bloc_image">
                                         <a href="<?php the_permalink(); ?>"  class="btn">Voir plus</a>
-                                        <?php the_post_thumbnail(); ?>
+                                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
                                     </div>
 
                                     <div class="bloc_infos">
-                                        <h2><?php the_title(); ?> (<?php the_date('Y'); ?>)</h2>
+                                        <h1><?php the_title(); ?> (<?php the_date('Y'); ?>)</h1>
 
                                         <div class="boite_resume">
 
