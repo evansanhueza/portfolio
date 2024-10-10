@@ -5,6 +5,9 @@
     justify-content: center;
     background: var(--color-primary);
 
+    @media screen and (max-width: $breakpoint-tb) {
+    }
+
     .wrapper {
         display: flex;
         align-items: center;

@@ -1,6 +1,7 @@
 import Carousel from './components/Carousel';
 import Loading from './components/Loading';
 import Cursor from './components/Cursor';
+import Header from './components/Header';
 
 export default class ComponentFactory {
   constructor() {
@@ -9,6 +10,7 @@ export default class ComponentFactory {
       Carousel,
       Loading,
       Cursor,
+      Header,
     };
     this.init();
   }

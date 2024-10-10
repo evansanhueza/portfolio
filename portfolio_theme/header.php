@@ -24,7 +24,7 @@
     <div class="cursor"></div>
     <div class="cursor2"></div>
 
-    <header class="header" >
+    <header class="header" data-component="Header">
       <div class="wrapper">
 
         <a href="<?php bloginfo('url'); ?>" class="brand">
@@ -39,11 +39,11 @@
             'container_class' => 'menu',
         )); ?>
 
-        <!-- <button class="header__toggle js-toggle">
+        <button class="header__toggle js-toggle">
               <span></span>
               <span></span>
               <span></span>
-        </button> -->
+        </button>
 
       </div>
     </header>

@@ -10,6 +10,28 @@ body {
     color: var(--color-black);
     background: var(--color-bg-primary);
     line-height: 1.6;
-
+    transition: 1s ease-out;
     cursor: none;
+
+    @media screen and (max-width: $breakpoint-tb) {
+        --font-size-h1: 3rem;
+        --font-size-h2: 2rem;
+        --font-size-h3: 2rem;
+        --font-size-btn: 2rem;
+        --font-size-p: 2.5rem;
+        --font-size-menu: 2rem;
+        --font-size-footer: 1.75rem;
+        transition: 1s ease-out;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        --font-size-h1: 3.5rem;
+        --font-size-h2: 2.5rem;
+        --font-size-h3: 2rem;
+        --font-size-btn: 2.5rem;
+        --font-size-p: 2.5rem;
+        --font-size-menu: 2rem;
+        --font-size-footer: 1.75rem;
+        transition: 1s ease-out;
+    }
 }

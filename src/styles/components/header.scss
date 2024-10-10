@@ -58,3 +58,86 @@
         }
     }
 }
+
+/* ==========================================================================
+   header / component
+   ========================================================================== */
+
+.header__toggle {
+    --bar-height: 6px;
+    --bar-width: 40px;
+    --bar-spacer: 8px;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    width: var(--bar-width);
+    height: var(--bar-width);
+    z-index: 20;
+    position: relative;
+    display: flex; /* Pour s'assurer que les spans sont enfants de .header__toggle */
+    flex-direction: column;
+    justify-content: space-between; /* Crée l'espace entre les barres */
+}
+
+.header__toggle span {
+    background-color: #ffffff; /* Couleur des barres */
+    border-radius: 3px;
+    height: var(--bar-height);
+    width: 100%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.header__toggle span:nth-child(1) {
+    transform: rotate(0); /* Aucune rotation initiale */
+}
+
+.header__toggle span:nth-child(2) {
+    opacity: 1; /* Bar visible par défaut */
+}
+
+.header__toggle span:nth-child(3) {
+    transform: rotate(0); /* Aucune rotation initiale */
+}
+
+/* Gestion de l'état du bouton quand le menu est actif */
+.nav-is-active .header__toggle span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 50%;
+}
+
+.nav-is-active .header__toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-is-active .header__toggle span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 50%;
+}
+
+/* Quand la classe 'nav-is-active' est présente, le menu s'affiche */
+.nav-is-active .header nav {
+    transform: translateY(0); /* Fait apparaître le menu */
+}
+
+@media screen and (min-width: 768px) {
+    .header nav {
+        position: relative;
+        height: auto;
+        width: auto;
+        flex-direction: row;
+        justify-content: flex-end;
+        transform: none;
+    }
+
+    .header__toggle {
+        display: none; /* Masque le toggle sur grands écrans */
+    }
+
+    .header nav ul {
+        flex-direction: row;
+        opacity: 1;
+    }
+}

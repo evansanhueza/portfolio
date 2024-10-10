@@ -3,9 +3,10 @@
    ========================================================================== */
 
 // Valeurs utilisées pour les médias query
-$breakpoint-xs: 480px;
-$breakpoint-sm: 768px;
+$breakpoint-xs: 350px;
+$breakpoint-sm: 375px;
 $breakpoint-md: 1024px;
+$breakpoint-tb: 1366px;
 $breakpoint-lg: 1440px;
 $breakpoint-xl: 1920px;
 
@@ -13,6 +14,7 @@ $breakpoint-xl: 1920px;
     --spacing-xs: 5px;
     --spacing-sm: 15px;
     --spacing-md: 30px;
+    --spacing-tb: 40px;
     --spacing-lg: 50px;
     --spacing-xl: 100px;
     --spacing-xxl: 220px;
