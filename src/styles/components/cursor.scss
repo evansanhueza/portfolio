@@ -9,7 +9,7 @@
     left: 0;
     top: 0;
     transform: translate(calc(-50% + 15px), -50%);
-    z-index: 100;
+    z-index: 1000;
 }
 
 .cursor2 {
@@ -22,7 +22,7 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
     transition: width 0.3s, height 0.3s, opacity 0.3s;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .hover {
