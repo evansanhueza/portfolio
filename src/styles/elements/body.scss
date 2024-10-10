@@ -25,13 +25,13 @@ body {
     }
 
     @media screen and (max-width: $breakpoint-sm) {
-        --font-size-h1: 3.5rem;
-        --font-size-h2: 2.5rem;
+        --font-size-h1: 2rem;
+        --font-size-h2: 1.7rem;
         --font-size-h3: 2rem;
-        --font-size-btn: 2.5rem;
+        --font-size-btn: 1.7rem;
         --font-size-p: 2.5rem;
         --font-size-menu: 2rem;
-        --font-size-footer: 1.75rem;
+        --font-size-footer: 1.5rem;
         transition: 1s ease-out;
     }
 }
