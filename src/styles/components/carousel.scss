@@ -2,6 +2,10 @@
     display: flex;
     justify-content: center;
     position: static;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        //margin-bottom: 5vh;
+    }
 }
 .swiper-pagination-bullet {
     --size: 20px;
@@ -32,6 +36,11 @@
 
     //top: var(--swiper-navigation-top-offset, 50%);
     top: var(--swiper-navigation-top-offset, 95%);
+
+    @media screen and (max-width: $breakpoint-sm) {
+        top: var(--swiper-navigation-top-offset, 85%);
+        transition: 0.5s ease;
+    }
 }
 
 .swiper-button-prev::after,

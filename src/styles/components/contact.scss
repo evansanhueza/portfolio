@@ -12,6 +12,11 @@
         height: 100%;
         width: 100%;
 
+        @media screen and (max-width: $breakpoint-sm) {
+            flex-direction: column;
+            gap: 0;
+        }
+
         .contact {
             display: flex;
             flex-direction: column;
@@ -77,6 +82,9 @@
                     list-style: none;
                     padding: 0;
                     padding-left: 80px;
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                    }
 
                     svg {
                         transition: 0.5s ease-out;

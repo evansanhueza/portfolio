@@ -35,9 +35,19 @@
 .icon--lg {
     height: 3em;
     width: 3em;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        height: 2em;
+        width: 2em;
+    }
 }
 
 .icon--xl {
     height: 7em;
     width: 7em;
+}
+
+.icon--logo {
+    height: 3em;
+    width: 3em;
 }

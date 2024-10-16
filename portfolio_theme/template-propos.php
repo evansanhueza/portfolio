@@ -16,11 +16,11 @@
 
                         <div class="swiper-slide propos1">
                             <div class="propos_img">
+                                <?php the_post_thumbnail(); ?>
+
                                 <?php if (get_field('profession', 'options')): ?>
                                     <h2><?php the_field('profession', 'options'); ?></h2> 
                                 <?php endif; ?>
-
-                                <?php the_post_thumbnail(); ?>
                             </div>
                             
                             <div class="infos_moi">

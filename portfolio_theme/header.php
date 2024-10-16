@@ -28,7 +28,7 @@
       <div class="wrapper">
 
         <a href="<?php bloginfo('url'); ?>" class="brand">
-            <svg class="icon icon--lg">
+            <svg class="icon icon--logo">
               <use xlink:href="#icon-logo"></use>
             </svg>
         </a>
