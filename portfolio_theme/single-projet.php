@@ -17,7 +17,7 @@
                                 <h1><?php the_title(); ?> (<?php the_date('Y'); ?>)</h1>
 
                                 <?php if (get_field('contexte')) : ?>
-                                    <h3><?php the_field('contexte'); ?></h3>
+                                    <p><?php the_field('contexte'); ?></p>
                                 <?php endif; ?>
 
                             </div>
@@ -29,7 +29,7 @@
                                 <div class="description">
 
                                     <?php if (get_field('description')) : ?>
-                                        <h3><?php the_field('description'); ?></h3>
+                                        <p><?php the_field('description'); ?></p>
                                     <?php endif; ?>
 
                                     <div class="icones">
@@ -60,7 +60,7 @@
 
                                     <div class="galerie">
 
-                                        <div class="explication"><p><?php the_sub_field('explication'); ?></p></div>
+                                        <div class="explication"><h3><?php the_sub_field('explication'); ?></h3></div>
                                         
 
                                         <?php 
@@ -103,7 +103,7 @@
                                 <h2>Défis techniques</h2>
 
                                 <?php if (get_field('defis_techniques')) : ?>
-                                    <h3><?php the_field('defis_techniques'); ?></h3>
+                                    <p><?php the_field('defis_techniques'); ?></p>
                                 <?php endif; ?>
 
                                 <?php if (get_field('lien_projet')) : ?>

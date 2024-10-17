@@ -17,14 +17,27 @@
                 align-items: center;
                 padding-bottom: 10vh;
 
+                @media screen and (max-width: $breakpoint-sm) {
+                    padding-bottom: 5vh;
+                }
+
                 .projet1 {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     gap: 50px;
 
+                    @media screen and (max-width: $breakpoint-sm) {
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+
                     .bloc1 {
                         max-width: 40%;
+
+                        @media screen and (max-width: $breakpoint-sm) {
+                            max-width: 90%;
+                        }
 
                         h1 {
                             background: var(--color-secondary);
@@ -32,15 +45,23 @@
                             padding: 15px;
                         }
 
-                        h3 {
+                        p {
                             border: var(--color-secondary) 4px solid;
                             padding: 20px;
                             text-align: center;
+
+                            @media screen and (max-width: $breakpoint-sm) {
+                                padding: 10px;
+                            }
                         }
                     }
 
                     .bloc2 {
                         max-width: 40%;
+
+                        @media screen and (max-width: $breakpoint-sm) {
+                            max-width: 90%;
+                        }
 
                         h2 {
                             background: var(--color-secondary);
@@ -58,7 +79,12 @@
                             justify-content: center;
                             gap: 30px;
 
-                            h3 {
+                            @media screen and (max-width: $breakpoint-sm) {
+                                gap: 15px;
+                                padding: 10px;
+                            }
+
+                            p {
                                 text-align: center;
                             }
 
@@ -93,11 +119,20 @@
                         justify-content: center;
                         gap: 20px;
 
+                        @media screen and (max-width: $breakpoint-sm) {
+                            flex-direction: column-reverse;
+                            gap: 0px;
+                        }
+
                         .explication {
                             border: var(--color-secondary) 4px solid;
                             height: 100%;
                             max-width: 40%;
                             text-align: center;
+
+                            @media screen and (max-width: $breakpoint-sm) {
+                                max-width: 90%;
+                            }
 
                             p {
                                 padding: 20px;
@@ -110,6 +145,18 @@
                             border: solid var(--color-secondary) 20px;
                             filter: grayscale(1) drop-shadow(2px 4px 6px black);
                             transition: 1s ease-out;
+
+                            @media screen and (max-width: $breakpoint-tb) {
+                                filter: grayscale(0)
+                                    drop-shadow(2px 4px 6px black);
+                                max-width: 40vh;
+                            }
+
+                            @media screen and (max-width: $breakpoint-sm) {
+                                filter: grayscale(0)
+                                    drop-shadow(2px 4px 6px black);
+                                max-width: 30vh;
+                            }
                         }
 
                         img:hover {
@@ -126,12 +173,21 @@
                     justify-content: center;
                     gap: 5%;
 
+                    @media screen and (max-width: $breakpoint-sm) {
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+
                     .bloc_video {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
                         gap: 20px;
+
+                        @media screen and (max-width: $breakpoint-sm) {
+                            gap: 0;
+                        }
 
                         .video {
                             display: flex;
@@ -142,6 +198,18 @@
                                 position: absolute;
                                 z-index: -1;
                             }
+
+                            iframe {
+                                @media screen and (max-width: $breakpoint-tb) {
+                                    width: 55vh;
+                                    height: 30vh;
+                                }
+
+                                @media screen and (max-width: $breakpoint-sm) {
+                                    width: 35vh;
+                                    height: 20vh;
+                                }
+                            }
                         }
 
                         .explication {
@@ -151,6 +219,10 @@
 
                             p {
                                 padding: 20px;
+
+                                @media screen and (max-width: $breakpoint-sm) {
+                                    padding: 10px;
+                                }
                             }
                         }
                     }
@@ -167,10 +239,14 @@
                             text-align: right;
                         }
 
-                        h3 {
+                        p {
                             border: var(--color-secondary) 4px solid;
                             padding: 20px;
                             text-align: center;
+
+                            @media screen and (max-width: $breakpoint-sm) {
+                                padding: 10px;
+                            }
                         }
 
                         .btn {
