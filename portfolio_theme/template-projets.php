@@ -30,8 +30,8 @@
                                 <div class="swiper-slide projet_presentation">
 
                                     <div class="bloc_image">
-                                        <a href="<?php the_permalink(); ?>"  class="btn">Voir plus</a>
                                         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                                        <a href="<?php the_permalink(); ?>"  class="btn">Voir plus</a>
                                     </div>
 
                                     <div class="bloc_infos">

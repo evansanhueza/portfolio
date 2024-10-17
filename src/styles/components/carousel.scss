@@ -33,9 +33,9 @@
     align-items: center;
     justify-content: center;
     transition: 0.5s ease;
-
+    z-index: 5;
     //top: var(--swiper-navigation-top-offset, 50%);
-    top: var(--swiper-navigation-top-offset, 95%);
+    top: var(--swiper-navigation-top-offset, 94%);
 }
 
 .swiper-button-prev::after,
