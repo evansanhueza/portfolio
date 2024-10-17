@@ -29,21 +29,21 @@
 
                                 <div class="swiper-slide projet_presentation">
 
-                                    <div class="bloc_image">
+                                    <div class="bloc_image" data-scrolly="fromLeft">
                                         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
                                         <a href="<?php the_permalink(); ?>"  class="btn">Voir plus</a>
                                     </div>
 
-                                    <div class="bloc_infos">
+                                    <div class="bloc_infos" data-scrolly="fromRight">
                                         <h1><?php the_title(); ?> (<?php the_date('Y'); ?>)</h1>
 
-                                        <div class="boite_resume">
+                                        <div class="boite_resume" data-scrolly="fromRight">
 
                                             <?php if (get_field('resume')) : ?>
-                                                <h3><?php the_field('resume'); ?></h3>
+                                                <h3 data-scrolly="fromTop"><?php the_field('resume'); ?></h3>
                                             <?php endif; ?>
 
-                                            <div class="icones">
+                                            <div class="icones" data-scrolly="fromBottom">
                                                 <?php if( have_rows('logiciels') ): ?>
                                                     <nav class="nav-logi">
                                                         <ul>
@@ -76,9 +76,9 @@
                     </div>
 
                     <!-- N'oubliez pas votre pagination -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-pagination"></div>
+                    <div data-scrolly="fromBottom" class="swiper-button-prev"></div>
+                    <div data-scrolly="fromBottom" class="swiper-button-next"></div>
+                    <div data-scrolly="fromBottom" class="swiper-pagination"></div>
                 </div>
 
             </div>

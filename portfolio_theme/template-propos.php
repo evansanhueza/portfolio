@@ -15,7 +15,7 @@
                     <div class="swiper-wrapper">
 
                         <div class="swiper-slide propos1">
-                            <div class="propos_img">
+                            <div class="propos_img" data-scrolly="fromLeft">
                                 <?php the_post_thumbnail(); ?>
 
                                 <?php if (get_field('profession', 'options')): ?>
@@ -23,7 +23,7 @@
                                 <?php endif; ?>
                             </div>
                             
-                            <div class="infos_moi">
+                            <div class="infos_moi" data-scrolly="fromRight">
                                 <?php if (get_field('nom', 'options')): ?>
                                     <h1><?php the_field('nom', 'options'); ?></h1> 
                                 <?php endif; ?>
@@ -38,38 +38,38 @@
 
                         <div class="swiper-slide propos2">
 
-                            <h2>Un petit résumé de moi</h2>
+                            <h2 data-scrolly="fromTop">Un petit résumé de moi</h2>
 
                             <div class="propos2_cont">
 
                                 
 
                                 <?php if (get_field('canditature', 'options')): ?>
-                                    <h3><?php the_field('canditature', 'options'); ?></h3> 
+                                    <h3 data-scrolly="fromTop"><?php the_field('canditature', 'options'); ?></h3> 
                                 <?php endif; ?>
 
                                 <div class="icones_passions">
 
-                                    <svg class="icon icon--lg">
+                                    <svg class="icon icon--lg" data-scrolly="fromLeft">
                                         <use xlink:href="#icon-3d"></use>
                                     </svg>
 
-                                    <svg class="icon icon--lg">
+                                    <svg class="icon icon--lg" data-scrolly="fromLeft">
                                         <use xlink:href="#icon-manette"></use>
                                     </svg>
 
-                                    <svg class="icon icon--lg">
+                                    <svg class="icon icon--lg" data-scrolly="fromRight">
                                         <use xlink:href="#icon-camera"></use>
                                     </svg>
 
-                                    <svg class="icon icon--lg">
+                                    <svg class="icon icon--lg" data-scrolly="fromRight">
                                         <use xlink:href="#icon-livre"></use>
                                     </svg>
 
                                 </div>
                                 
                                 <?php if (get_field('passions', 'options')): ?>
-                                    <h3><?php the_field('passions', 'options'); ?></h3> 
+                                    <h3 data-scrolly="fromBottom"><?php the_field('passions', 'options'); ?></h3> 
                                 <?php endif; ?>
                                 
                             </div>   
@@ -85,31 +85,31 @@
 
                                     <ul class="je_suis">
 
-                                        <li><h3>Sociable</h3></li>
-                                        <li><h3>Organisé</h3></li>
-                                        <li><h3>Bon en équipe</h3></li>
+                                        <li data-scrolly="fromBottom"><h3>Sociable</h3></li>
+                                        <li data-scrolly="fromBottom"><h3>Organisé</h3></li>
+                                        <li data-scrolly="fromBottom"><h3>Bon en équipe</h3></li>
 
                                     </ul>
 
                                 </div>
 
-                                <div class="ligne"></div>
+                                <div class="ligne" data-scrolly="fromBottom"></div>
 
                                 <div class="bloc2">
 
-                                    <h2>Mes compétences</h2>
+                                    <h2 data-scrolly="fromTop">Mes compétences</h2>
 
                                     <div class="je_fais">
 
                                         <ul class="talents">
 
-                                            <li><h3>Modélisation/animation 3D (Blender)</h3></li>
-                                            <li><h3>Montage vidéo/sonore (suite Adobe, Reaper)</h3></li>
-                                            <li><h3>Programmation/design web (HTML/CSS, PHP/Mysql, figma)</h3></li>
+                                            <li data-scrolly="fromLeft"><h3>Modélisation/animation 3D (Blender)</h3></li>
+                                            <li data-scrolly="fromLeft"><h3>Montage vidéo/sonore (suite Adobe, Reaper)</h3></li>
+                                            <li data-scrolly="fromLeft"><h3>Programmation/design web (HTML/CSS, PHP/Mysql, figma)</h3></li>
                                         
                                         </ul>
 
-                                        <ul class="talents_icones">
+                                        <ul class="talents_icones" data-scrolly="fromRight">
 
                                             <li>
                                                 <svg class="icon icon--lg">
@@ -146,9 +146,9 @@
                     </div>
 
                     <!-- N'oubliez pas votre pagination -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-pagination"></div>
+                    <div data-scrolly="fromBottom" class="swiper-button-prev"></div>
+                    <div data-scrolly="fromBottom" class="swiper-button-next"></div>
+                    <div data-scrolly="fromBottom" class="swiper-pagination"></div>
                 </div>
 
                 </div>

@@ -2,7 +2,7 @@
 
     <div class="wrapper">
 
-       <p class="footer_txt">Tous droits réservés © <?php echo Date('Y'); ?> <?php bloginfo('name'); ?></p> 
+       <p data-scrolly="fromBottom" class="footer_txt">Tous droits réservés © <?php echo Date('Y'); ?> <?php bloginfo('name'); ?></p> 
 
     </div>
 

@@ -7,11 +7,11 @@
     <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
 
-        <section class="page_contact">
+        <section class="page_contact" data-scrolly="fromTop">
 
             <div class="wrapper">
 
-                <div class="contact">
+                <div class="contact" data-scrolly="fromTop">
                     <div class="infos_contact">
                         <h3>Mon cv : <a href="" download class="download">télécharger</a></h3>
 
@@ -25,10 +25,10 @@
 
                     </div>
 
-                    <div class="icones_reseaux">
+                    <div class="icones_reseaux" data-scrolly="fromTop">
                         <?php if( have_rows('sociaux', 'options') ): ?>
                             <nav class="nav-social">
-                                <ul>
+                                <ul data-scrolly="fromLeft">
                                     <?php while( have_rows('sociaux', 'options') ) : the_row(); ?>
 
                                         <li>
@@ -46,7 +46,7 @@
                     </div>
                 </div>
 
-                <div class="form">
+                <div class="form" data-scrolly="fromRight">
 
                     <?php the_content(); ?>
                     

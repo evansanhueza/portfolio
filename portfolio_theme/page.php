@@ -3,7 +3,7 @@
     <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
 
-        <section class="section">
+        <section class="section" data-scrolly="fromTop">
 
             <div class="wrapper">
 

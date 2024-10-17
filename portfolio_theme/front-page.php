@@ -19,7 +19,7 @@
 
                 <div class="video_boite">
 
-                    <a href="<?php echo get_permalink(get_page_by_path('a-propos')); ?>" class="titre">
+                    <a data-scrolly="fromLeft" href="<?php echo get_permalink(get_page_by_path('a-propos')); ?>" class="titre">
                         <?php if (get_field('nom', 'options')): ?>
                             <h1><?php the_field('nom', 'options'); ?></h1> 
                         <?php endif; ?>
@@ -28,11 +28,11 @@
                         <?php endif; ?>
                     </a>
 
-                    <video class="video" autoplay muted loop>
+                    <video class="video" autoplay muted loop data-scrolly="fromBottom">
                         <source src="<?php bloginfo('template_url'); ?>/dist/assets/video/demo_projets.mp4" type="video/mp4">
                     </video>
 
-                    <a href="<?php echo get_permalink(get_page_by_path('projets')); ?>"  class="btn">Voir mes projets</a>
+                    <a data-scrolly="fromRight" href="<?php echo get_permalink(get_page_by_path('projets')); ?>"  class="btn">Voir mes projets</a>
 
                 </div>
 

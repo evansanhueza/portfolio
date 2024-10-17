@@ -12,27 +12,27 @@
 
                         <div class="swiper-slide projet1">
                             
-                            <div class="bloc1">
+                            <div class="bloc1" data-scrolly="fromLeft">
 
-                                <h1><?php the_title(); ?> (<?php the_date('Y'); ?>)</h1>
+                                <h1 data-scrolly="fromTop"><?php the_title(); ?> (<?php the_date('Y'); ?>)</h1>
 
                                 <?php if (get_field('contexte')) : ?>
-                                    <p><?php the_field('contexte'); ?></p>
+                                    <p data-scrolly="fromBottom"><?php the_field('contexte'); ?></p>
                                 <?php endif; ?>
 
                             </div>
 
-                            <div class="bloc2">
+                            <div class="bloc2" data-scrolly="fromRight">
 
-                                <h2>Description</h2>
+                                <h2 data-scrolly="fromTop">Description</h2>
 
-                                <div class="description">
+                                <div class="description" data-scrolly="fromBottom">
 
                                     <?php if (get_field('description')) : ?>
-                                        <p><?php the_field('description'); ?></p>
+                                        <p data-scrolly="fromBottom"><?php the_field('description'); ?></p>
                                     <?php endif; ?>
 
-                                    <div class="icones">
+                                    <div class="icones" data-scrolly="fromBottom">
                                         <?php if( have_rows('logiciels') ): ?>
                                             <nav class="nav-logi">
                                                 <ul>
@@ -60,14 +60,14 @@
 
                                     <div class="galerie">
 
-                                        <div class="explication"><h3><?php the_sub_field('explication'); ?></h3></div>
+                                        <div data-scrolly="fromLeft" class="explication"><p><?php the_sub_field('explication'); ?></p></div>
                                         
 
                                         <?php 
                                             $image = get_sub_field('image');
                                             if( !empty( $image ) ):
                                             ?>
-                                                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                <img data-scrolly="fromRight" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                                         <?php endif; ?>    
 
                                     </div>
@@ -84,14 +84,14 @@
 
                                     <div class="bloc_video">
 
-                                        <div class="video">
+                                        <div class="video" data-scrolly="fromLeft">
 
                                             <?php $embedcode = the_sub_field('video'); ?>
                                             <iframe class="frame" src="<?php echo $embedcode; ?>" width="600" height="350" frameborder="0"></iframe>
 
                                         </div> 
 
-                                        <div class="explication"><p><?php the_sub_field('explication_video'); ?></p></div>     
+                                        <div class="explication" data-scrolly="fromLeft"><p><?php the_sub_field('explication_video'); ?></p></div>     
 
                                     </div>
 
@@ -100,14 +100,14 @@
                             
                             <div class="defis">
 
-                                <h2>Défis techniques</h2>
+                                <h2 data-scrolly="fromTop">Défis techniques</h2>
 
                                 <?php if (get_field('defis_techniques')) : ?>
-                                    <p><?php the_field('defis_techniques'); ?></p>
+                                    <p data-scrolly="fromRight"><?php the_field('defis_techniques'); ?></p>
                                 <?php endif; ?>
 
                                 <?php if (get_field('lien_projet')) : ?>
-                                    <a href="<?php the_field('lien_projet'); ?>" target="_blank"  class="btn">Voir encore plus</a>
+                                    <a data-scrolly="fromBottom" href="<?php the_field('lien_projet'); ?>" target="_blank"  class="btn">Voir encore plus</a>
                                 <?php endif; ?>
                             </div>
                         </div>
@@ -115,9 +115,9 @@
                     </div>
 
                     <!-- N'oubliez pas votre pagination -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-pagination"></div>
+                    <div data-scrolly="fromBottom" class="swiper-button-prev"></div>
+                    <div data-scrolly="fromBottom" class="swiper-button-next"></div>
+                    <div data-scrolly="fromBottom" class="swiper-pagination"></div>
                 </div>
 
             </div>

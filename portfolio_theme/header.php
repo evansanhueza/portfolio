@@ -19,16 +19,16 @@
     <?php wp_head(); ?>
   </head>
 
-  <body <?php body_class(); ?> data-component="Cursor">
+  <body <?php body_class(); ?>  data-component="Scrolly" data-no-repeat>
     
-    <div class="cursor"></div>
+    <div data-component="Cursor" class="cursor"></div>
     <div class="cursor2"></div>
 
     <header class="header" data-component="Header">
       <div class="wrapper">
 
         <a href="<?php bloginfo('url'); ?>" class="brand">
-            <svg class="icon icon--logo">
+            <svg data-scrolly="fromLeft" class="icon icon--logo">
               <use xlink:href="#icon-logo"></use>
             </svg>
         </a>
