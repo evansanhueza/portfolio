@@ -88,7 +88,6 @@
                                         <li><h3>Sociable</h3></li>
                                         <li><h3>Organisé</h3></li>
                                         <li><h3>Bon en équipe</h3></li>
-                                        <li><h3>Ouvert aux critiques</h3></li>
 
                                     </ul>
 
@@ -105,8 +104,8 @@
                                         <ul class="talents">
 
                                             <li><h3>Modélisation/animation 3D (Blender)</h3></li>
-                                            <li><h3>Montage vidéo/sonore (adobe After Effects/Premiere Pro, Reaper)</h3></li>
-                                            <li><h3>Programmation/design web (HTML, CSS, PHP/Mysql, figma)</h3></li>
+                                            <li><h3>Montage vidéo/sonore (suite Adobe, Reaper)</h3></li>
+                                            <li><h3>Programmation/design web (HTML/CSS, PHP/Mysql, figma)</h3></li>
                                         
                                         </ul>
 

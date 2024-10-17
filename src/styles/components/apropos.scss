@@ -190,6 +190,7 @@
 
                             @media screen and (max-width: $breakpoint-sm) {
                                 flex-direction: column;
+                                gap: 15px;
                             }
 
                             .talents {
@@ -223,6 +224,7 @@
 
                                 @media screen and (max-width: $breakpoint-sm) {
                                     flex-direction: row;
+                                    padding: 0;
                                 }
                             }
                         }
