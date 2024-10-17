@@ -32,6 +32,10 @@
                                     <h3><?php the_field('courte_description', 'options'); ?></h3> 
                                 <?php endif; ?>
 
+                                <?php if (get_field('presentation', 'options')): ?>
+                                    <h3><a href="<?php the_field('presentation', 'options'); ?>" target="_blank">Vidéo de présentation</a></h3> 
+                                <?php endif; ?>
+
                             </div>
                             
                         </div>
