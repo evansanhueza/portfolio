@@ -100,6 +100,15 @@
                                     margin: 0;
                                     padding: 0;
                                     gap: 20px;
+
+                                    svg {
+                                        transition: 0.5s ease-out;
+                                    }
+
+                                    svg:hover {
+                                        transform: rotate(15deg);
+                                        transition: 0.5s ease-out;
+                                    }
                                 }
                             }
                         }

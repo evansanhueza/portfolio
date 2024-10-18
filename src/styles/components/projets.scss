@@ -129,6 +129,15 @@
                                         gap: 15px;
                                         margin-top: 15px;
                                     }
+
+                                    svg {
+                                        transition: 0.5s ease-out;
+                                    }
+
+                                    svg:hover {
+                                        transform: rotate(15deg);
+                                        transition: 0.5s ease-out;
+                                    }
                                 }
                             }
                         }

@@ -165,6 +165,12 @@
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
+                                transition: 0.5s ease-out;
+                            }
+
+                            svg:hover {
+                                transform: rotate(15deg);
+                                transition: 0.5s ease-out;
                             }
                         }
                     }
@@ -172,7 +178,7 @@
 
                 .propos3 {
                     display: flex;
-                    align-items: center;
+                    align-items: flex-start;
                     justify-content: center;
                     gap: 50px;
 
@@ -182,6 +188,7 @@
 
                     @media screen and (max-width: $breakpoint-sm) {
                         flex-direction: column;
+                        align-items: center;
                     }
 
                     .bloc1 {
@@ -218,7 +225,7 @@
                         h2 {
                             background: var(--color-secondary);
                             color: var(--color-bg-primary);
-                            text-align: right;
+                            text-align: left;
                             padding: 15px;
                         }
 
@@ -269,6 +276,15 @@
                                 @media screen and (max-width: $breakpoint-sm) {
                                     flex-direction: row;
                                     padding: 0;
+                                }
+
+                                svg {
+                                    transition: 0.5s ease-out;
+                                }
+
+                                svg:hover {
+                                    transform: rotate(15deg);
+                                    transition: 0.5s ease-out;
                                 }
                             }
                         }
