@@ -43,7 +43,9 @@
                                                                 <use xlink:href="#icon-<?php the_sub_field('nom'); ?>"></use>
                                                             </svg>
                                                         </li>
+
                                                     <?php endwhile; ?>
+                                                    
                                                 </ul>
                                             </nav>
                                         <?php endif; ?>
@@ -115,9 +117,9 @@
                     </div>
 
                     <!-- N'oubliez pas votre pagination -->
-                    <div data-scrolly="fromBottom" class="swiper-button-prev"></div>
-                    <div data-scrolly="fromBottom" class="swiper-button-next"></div>
-                    <div data-scrolly="fromBottom" class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
 
             </div>

@@ -44,7 +44,7 @@
                             height: 100%;
                             max-width: 70vh;
                             border: solid var(--color-secondary) 20px;
-                            filter: grayscale(1) drop-shadow(2px 4px 6px black);
+                            filter: grayscale(0) drop-shadow(2px 4px 6px black);
                             transition: 1s ease-out;
 
                             @media screen and (max-width: $breakpoint-tb) {
