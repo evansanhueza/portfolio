@@ -14,7 +14,7 @@
 
         @media screen and (max-width: $breakpoint-sm) {
             flex-direction: column;
-            transition: 1s ease-out;
+            transition: 0.5s ease-out;
         }
 
         .video_boite {
@@ -26,7 +26,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                transition: 1s ease-out;
+                transition: 0.5s ease-out;
                 gap: 20px;
             }
 
@@ -43,11 +43,11 @@
                 left: 5%;
                 border: var(--color-accent) 4px solid;
                 z-index: 8;
-                transition: 1s ease-out;
+                transition: 0.5s ease-out;
 
                 @media screen and (max-width: $breakpoint-sm) {
                     position: relative;
-                    transition: 1s ease-out;
+                    transition: 0.5s ease-out;
                     text-align: center;
                     left: 0;
                 }
@@ -56,7 +56,7 @@
             .titre:hover {
                 background: var(--color-accent);
                 color: var(--color-primary);
-                transition: 1s ease-out;
+                transition: 0.5s ease-out;
                 text-decoration: none;
             }
 
@@ -66,7 +66,7 @@
                 width: 100%;
                 border: solid var(--color-secondary) 20px;
                 filter: grayscale(1) drop-shadow(2px 4px 6px black);
-                transition: 1s ease-out;
+                transition: 0.5s ease-out;
 
                 @media screen and (max-width: $breakpoint-tb) {
                     filter: grayscale(0) drop-shadow(2px 4px 6px black);
@@ -94,12 +94,12 @@
                 right: 5%;
                 border: var(--color-white) 4px solid;
                 color: var(--color-bg-primary);
-                transition: 1s ease-out;
+                transition: 0.5s ease-out;
                 z-index: 8;
 
                 @media screen and (max-width: $breakpoint-sm) {
                     position: relative;
-                    transition: 1s ease-out;
+                    transition: 0.5s ease-out;
                     right: 0;
                 }
             }
@@ -108,7 +108,7 @@
                 text-decoration: none;
                 background: var(--color-accent);
                 color: var(--color-primary);
-                transition: 1s ease-out;
+                transition: 0.5s ease-out;
                 border: var(--color-accent) 5px solid;
             }
         }

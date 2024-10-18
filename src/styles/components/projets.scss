@@ -75,7 +75,7 @@
                             left: 5%;
                             border: var(--color-white) 4px solid;
                             color: var(--color-bg-primary);
-                            transition: 1s ease-out;
+                            transition: 0.5s ease-out;
                             z-index: 2;
                         }
 
@@ -83,7 +83,7 @@
                             text-decoration: none;
                             background: var(--color-accent);
                             color: var(--color-primary);
-                            transition: 1s ease-out;
+                            transition: 0.5s ease-out;
                             border: var(--color-accent) 4px solid;
                         }
                     }
