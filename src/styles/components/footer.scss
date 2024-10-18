@@ -1,6 +1,7 @@
 footer {
-    margin-top: 9vh;
+    margin-top: 4vh;
     transition: 0.5s ease-out;
+    height: 100%;
 
     @media screen and (max-width: $breakpoint-sm) {
         transition: 0.5s ease-out;
@@ -11,5 +12,33 @@ footer {
         align-items: center;
         justify-content: center;
         text-align: center;
+
+        .footer_reseaux {
+            display: flex;
+            height: 100%;
+
+            ul {
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                list-style: none;
+                transition: 0.5s ease-out;
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    display: none;
+                }
+
+                svg {
+                    transition: 0.5s ease-out;
+                }
+
+                svg:hover {
+                    transition: 0.5s ease-out;
+                    color: var(--color-accent);
+                }
+            }
+        }
     }
 }
