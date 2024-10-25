@@ -11,7 +11,7 @@
 
             <div class="wrapper">
 
-                <div class="carousel swiper" data-component="Carousel" data-loop="true">
+                <div class="carousel swiper" data-component="Carousel" data-loop="true" data-autoplay="true">
                     <div class="swiper-wrapper">
 
                         <div class="swiper-slide propos1">

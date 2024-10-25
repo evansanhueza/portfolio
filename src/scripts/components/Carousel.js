@@ -77,7 +77,7 @@ export default class Carousel {
 
     if ('autoplay' in this.element.dataset) {
       this.options.autoplay = {
-        delay: 2000,
+        delay: 3000,
         pauseOnMouseEnter: true,
         disableOnInteraction: false,
         slidesPerView: 1,
