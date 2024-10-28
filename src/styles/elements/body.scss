@@ -11,6 +11,7 @@ body {
     background: var(--color-bg-primary);
     line-height: 1.6;
     transition: 1s ease-out;
+
     cursor: none;
 
     @media screen and (max-width: $breakpoint-tb) {
