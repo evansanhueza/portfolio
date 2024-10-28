@@ -5,6 +5,10 @@
     justify-content: center;
     background: var(--color-primary);
 
+    @media screen and (max-width: $breakpoint-sm) {
+        height: 100%;
+    }
+
     .wrapper {
         display: flex;
         align-items: center;
