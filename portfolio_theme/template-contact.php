@@ -13,7 +13,7 @@
 
                 <div class="contact" data-scrolly="fromTop">
                     <div class="infos_contact">
-                        <h3>Mon CV : <a href="" download class="download">télécharger</a></h3>
+                        <h3>Mon CV : <a href="<?php bloginfo('template_url'); ?>/dist/assets/sanhueza_evan_CV.pdf" download class="download">télécharger</a></h3>
 
                         <?php if (get_field('telephone', 'options')): ?>
                              <h3><a href="tel:+14387633339"><?php the_field('telephone', 'options'); ?></a></h3>
